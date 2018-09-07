@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 
-app.get('/name',function(req,res){
-	res.end("hello");
+app.get('/',function(req,res){
+	res.json("hello");
 });
 
 app.listen(80, function(err) {
